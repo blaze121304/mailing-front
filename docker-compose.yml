@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  mailing-front:
+    image: mailing-front:latest
+    container_name: mailing-front
+    ports:
+      - "10005:10005"
+    restart: unless-stopped
