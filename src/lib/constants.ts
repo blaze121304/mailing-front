@@ -1,10 +1,12 @@
-/** 구독 폼에서 선택 가능한 뉴스 카테고리 */
+/** 구독 폼에서 선택 가능한 뉴스 카테고리
+ *  백엔드 허용값: 사회, 경제, 정치, IT&기술, 문화
+ */
 export const NEWS_CATEGORIES = [
-  { id: 'politics', code: 'POLITICS', label: '정치' },
-  { id: 'economy', code: 'ECONOMY', label: '경제' },
-  { id: 'culture', code: 'CULTURE', label: '문화' },
-  { id: 'society', code: 'SOCIETY', label: '사회' },
-  { id: 'tech', code: 'IT', label: '기술' },
+  { id: 'society', code: '사회', label: '사회' },
+  { id: 'economy', code: '경제', label: '경제' },
+  { id: 'politics', code: '정치', label: '정치' },
+  { id: 'it', code: 'IT&기술', label: 'IT & 기술' },
+  { id: 'culture', code: '문화', label: '문화' },
 ] as const
 
 export type CategoryId = (typeof NEWS_CATEGORIES)[number]['id']
